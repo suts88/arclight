@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Merriweather&display=swap');
+
+//colors
+$bg-color-primary:  #242DFE;
+$bg-color-secondary: #F2F5FA;
+$color-black: #000000;
+
+$p-color-primary: #595959;
+
+//fonts
+$heading-font-primary: 'Bitter', serif;
+$paragraph-font-primary: 'Merriweather', serif;
+
+//breakpoints
+$mobile-bp: 408px;
+$pad-bp: 700px;
+$desktop-bp: 1250px;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $bg-color-primary;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// mixins
+
+@mixin button-inside-styles{
+  font-family: $heading-font-primary;
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+  margin-left: 25%;
+}
+
+@mixin header-one{
+  font-family: $heading-font-primary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@mixin default-paragraph($color: $color-black){
+  font-family: $paragraph-font-primary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: $color;
+  margin: 2rem auto;
+  max-width: 90%;
+}

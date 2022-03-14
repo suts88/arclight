@@ -1,0 +1,8 @@
+@use './global-styles';
+@use './header';
+@use './main';
+@use './footer';
+
+.app{
+  overflow-x: hidden;
+}
